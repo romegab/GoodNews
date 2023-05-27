@@ -10,11 +10,11 @@ import Foundation
 struct ArticleListViewModel {
     let articles: [Article]
     
-    var numberOfSection: Int {
+    public var numberOfSection: Int {
         return 1
     }
     
-    func numberOfRowsInSection(_ section: Int) -> Int {
+    public func numberOfRowsInSection(_ section: Int) -> Int {
         return self.articles.count
     }
     
